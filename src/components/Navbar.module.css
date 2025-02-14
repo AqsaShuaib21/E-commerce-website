@@ -1,0 +1,34 @@
+.navbarContent{
+  display:flex;
+  justify-content: space-between;
+
+}
+.home{
+  width:20%;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.searchBar{
+  width:60%;
+
+}
+.searchBar input{
+  width:60%;
+  text-align: center;
+  border-radius: 4px;
+}
+.searchBar input:hover{
+  border:2px solid white;
+}
+input::placeholder{
+  padding:10px;
+  font-weight: bold;
+}
+.cart{
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+}

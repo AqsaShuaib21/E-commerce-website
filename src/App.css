@@ -1,0 +1,24 @@
+.content{
+  display:flex;
+}
+.display{
+  width:100%;
+  margin-left:180px;
+}
+/* product details */
+.img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.img img{
+width:250px;
+height:250px;
+}
+.styleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4rem;
+}
