@@ -27,6 +27,9 @@ const ProductDetail = () => {
           <button className="btn btn-warning">Add To Cart</button>
         </div>
       </div>
+      <h2 className="text-center">
+        <u>Related Products</u>
+      </h2>
       <Product items={relatedProducts} />
     </>
   );

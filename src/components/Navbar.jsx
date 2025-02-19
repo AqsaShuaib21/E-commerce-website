@@ -1,19 +1,39 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
-const Navbar = () => {
+import { Link, useNavigate } from "react-router-dom";
+const Navbar = ({ cart }) => {
+  const navigate = useNavigate();
+  const [searchText, setSearchText] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/search/${searchText}`);
+    setSearchText(" ");
+  };
   return (
     <>
-      <header className="p-3 text-bg-dark">
+      <header className="p-3 text-bg-dark sticky-top">
         <div className={`container ${styles.navbarContent}`}>
           <Link to={"/"} className={styles.home}>
             {" "}
             Home
           </Link>
-          <div className={styles.searchBar}>
-            <input type="text" placeholder="Search product" />
-          </div>
+          <form className={styles.searchBar} onSubmit={handleSubmit}>
+            <input
+              type="text"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              placeholder="Search product"
+            />
+          </form>
           <Link to={"/cart"} className={styles.cart}>
-            CART
+            <button type="button" className="btn btn-primary position-relative">
+              CART
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {cart.length}
+                <span className="visually-hidden">unread messages</span>
+              </span>
+            </button>
           </Link>
         </div>
       </header>

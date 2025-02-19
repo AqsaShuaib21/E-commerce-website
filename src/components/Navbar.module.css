@@ -1,7 +1,6 @@
 .navbarContent{
   display:flex;
   justify-content: space-between;
-
 }
 .home{
   width:20%;

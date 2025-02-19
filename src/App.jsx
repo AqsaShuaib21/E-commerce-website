@@ -12,17 +12,24 @@ import { useState } from "react";
 
 function App() {
   const [data, setData] = useState([...items]);
+  const [cart, setCart] = useState([]);
   return (
     <Router>
       <div className="content">
-        <Sidebar></Sidebar>
+        <Sidebar setData={setData}></Sidebar>
         <div className="display">
-          <Navbar></Navbar>
+          <Navbar cart={cart}></Navbar>
           <Routes>
-            <Route path="/" element={<Product items={data} />} />
+            <Route
+              path="/"
+              element={<Product cart={cart} setCart={setCart} items={data} />}
+            />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/search/:term" element={<SearchItem />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route
+              path="/cart"
+              element={<Cart cart={cart} setCart={setCart} />}
+            />
           </Routes>
         </div>
       </div>
