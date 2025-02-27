@@ -1,5 +1,32 @@
 export const items = [
   {
+    id: 19,
+    category: "House-essential",
+    title: " star curtain house essential",
+    imgsrc:
+      "https://www.fnp.com/images/pr/l/v20200627195703/star-curtain-lights_1.jpg",
+    description: "LED cold light source ",
+    price: "38194",
+  },
+  {
+    id: 11,
+    category: "dresses",
+    title: "Indo Western Lehenga dress",
+    imgsrc:
+      "https://resources.indianclothstore.com/resources/productimages/7477-A12052023-Peach-Faux-Georgette-Indo-Western-Lehenga-Choli.jpg",
+    description: "Peach Faux Georgette Indo Western Lehenga Choli ",
+    price: "17000",
+  },
+  {
+    id: 15,
+    category: "laptop",
+    title: " HP Chromebook laptop",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.8DcjdRA1GrXLTw474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: " 4GB RAM, and 64GB SSD storage",
+    price: "28999",
+  },
+  {
     id: 1,
     category: "laptop",
     title: "ASUS Chromebook laptop",

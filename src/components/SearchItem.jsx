@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { items } from "./CartContext";
 import Product from "./ProductPage";
 
-const SearchItem = () => {
+const SearchItem = ({ cart, setCart }) => {
   const { term } = useParams();
   const [filterData, setFilterData] = useState([]);
   useEffect(() => {
@@ -15,6 +15,6 @@ const SearchItem = () => {
     };
     filteredData();
   }, [term]);
-  return <Product items={filterData} />;
+  return <Product cart={cart} setCart={setCart} items={filterData} />;
 };
 export default SearchItem;

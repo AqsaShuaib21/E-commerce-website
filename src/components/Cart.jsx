@@ -43,7 +43,9 @@ const Cart = ({ cart, setCart }) => {
       </div>
       {cart.length != 0 && (
         <div className={`container ${styles.btnStyle}`}>
-          <button className="btn btn-warning mx-5">Checkout</button>
+          <Link to={"/checkout"} className="btn btn-warning mx-5">
+            Checkout
+          </Link>
           <button onClick={() => setCart("")} className="btn btn-danger">
             Clear Cart
           </button>

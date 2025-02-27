@@ -23,11 +23,11 @@ const Sidebar = ({ setData }) => {
           <span className="fs-1">E-cart</span>
         </a>
         <hr />
-        <ul className="nav nav-pills flex-column mb-auto">
+        <ul className="nav nav-pills flex-column mb-auto style">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
+            <h2 href="#" className="nav-link active" aria-current="page">
               Filter by {":-"}
-            </a>
+            </h2>
           </li>
           <li onClick={() => setData(items)}>
             <a href="#" className="nav-link text-white">
@@ -51,17 +51,17 @@ const Sidebar = ({ setData }) => {
           </li>
           <li onClick={() => filterbyPrice(2000)}>
             <a href="#" className="nav-link text-white">
-              {"<="}2,000
+              {">="}2,000
             </a>
           </li>
           <li onClick={() => filterbyPrice(5000)}>
             <a href="#" className="nav-link text-white">
-              {"<="}5,000
+              {">="}5,000
             </a>
           </li>
           <li onClick={() => filterbyPrice(10000)}>
             <a href="#" className="nav-link text-white">
-              {"<="}10,000
+              {">="}10,000
             </a>
           </li>
           <li onClick={() => filterbyPrice(20000)}>

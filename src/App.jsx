@@ -9,6 +9,7 @@ import SearchItem from "./components/SearchItem";
 import Cart from "./components/Cart";
 import { items } from "./components/CartContext";
 import { useState } from "react";
+import Checkout from "./components/Checkout";
 
 function App() {
   const [data, setData] = useState([...items]);
@@ -24,12 +25,19 @@ function App() {
               path="/"
               element={<Product cart={cart} setCart={setCart} items={data} />}
             />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/search/:term" element={<SearchItem />} />
+            <Route
+              path="/product/:id"
+              element={<ProductDetail cart={cart} setCart={setCart} />}
+            />
+            <Route
+              path="/search/:term"
+              element={<SearchItem cart={cart} setCart={setCart} />}
+            />
             <Route
               path="/cart"
               element={<Cart cart={cart} setCart={setCart} />}
             />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </div>
       </div>

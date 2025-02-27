@@ -53,6 +53,7 @@ const Product = ({ items, cart, setCart }) => {
                     <img
                       src={product.imgsrc}
                       className="card-img-top"
+                      style={{ height: "18rem" }}
                       alt="..."
                     />
                   </Link>
