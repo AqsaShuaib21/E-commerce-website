@@ -9,6 +9,10 @@
   text-decoration: none;
   color: white;
 }
+.home:hover{
+  font-size: 1.5rem;
+  color: orange;
+}
 .searchBar{
   width:60%;
 
@@ -19,7 +23,7 @@
   border-radius: 4px;
 }
 .searchBar input:hover{
-  border:2px solid white;
+  border:2px solid orange;
 }
 input::placeholder{
   padding:10px;

@@ -10,6 +10,7 @@ import Cart from "./components/Cart";
 import { items } from "./components/CartContext";
 import { useState } from "react";
 import Checkout from "./components/Checkout";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState([...items]);
@@ -39,6 +40,7 @@ function App() {
             />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </Router>

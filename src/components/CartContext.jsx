@@ -1,5 +1,68 @@
 export const items = [
   {
+    id: 39,
+    category: "dresses",
+    title: "  Fancy Pakistani dress",
+    imgsrc:
+      "https://www.nameerabyfarooq.com/cdn/shop/products/PinkPakistaniLongFrockWithembroideredDupatta_1800x1800.jpg?v=1678457775",
+    description: "full embroidered with panels",
+    price: "25000",
+  },
+  {
+    id: 31,
+    category: "House-essential",
+    title: " Hot Selling house essential",
+    imgsrc:
+      " https://th.bing.com/th?id=OPAC.TBi4jg%2fBvowanw474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: "Household Decor Fast",
+    price: "4000",
+  },
+  {
+    id: 21,
+    category: "laptops",
+    title: " Lenovo Ideapad laptop",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.AT4Gus5G%2bQ%2bEFg474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: "Powered by Intel Core processors ",
+    price: "85491",
+  },
+  {
+    id: 29,
+    category: "dresses",
+    title: "  Women Elegant Coral Floral dress",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.lAu6fb5vFsjQwA474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: "- Anarva Women's maxi dree",
+    price: "8194",
+  },
+  {
+    id: 30,
+    category: "laptops",
+    title: " Dell XPS 13 Plus laptop",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.tjk0YsCQ1H6K4A474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: " lightweight laptop featuring an 11th Gen Intel Core ",
+    price: "40000",
+  },
+  {
+    id: 32,
+    category: "dresses",
+    title: "  Tokyo Talkies Women  dress",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.0Y8kmLp0VfO2tA474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: "Beige solid woven A-line dress,",
+    price: "1200",
+  },
+  {
+    id: 28,
+    category: "House-essential",
+    title: "  Spring Mattress house essential",
+    imgsrc:
+      "https://th.bing.com/th?id=OPAC.M4c8v1RZ1%2fQUMA474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+    description: " Hybrid Pocket Spring Mattress ",
+    price: "3890",
+  },
+  {
     id: 19,
     category: "House-essential",
     title: " star curtain house essential",
@@ -13,7 +76,7 @@ export const items = [
     category: "dresses",
     title: "Indo Western Lehenga dress",
     imgsrc:
-      "https://resources.indianclothstore.com/resources/productimages/7477-A12052023-Peach-Faux-Georgette-Indo-Western-Lehenga-Choli.jpg",
+      "https://th.bing.com/th?id=OPAC.bTJhIr8ZyJE8Lg474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
     description: "Peach Faux Georgette Indo Western Lehenga Choli ",
     price: "17000",
   },
@@ -121,7 +184,7 @@ export const items = [
   {
     id: 8,
     category: "House-essential",
-    title: "Wall Mirror | Rectangular house essential",
+    title: "Wall Mirror|house essential",
     imgsrc:
       "https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/Mirror_image/WFMIRHNBKBR60/WFMIRHNBKBR60_LS_01.jpg?tr=w-1200",
     description: " Black Metal Frame | Elegant & Sleek Design | Hanbok",
